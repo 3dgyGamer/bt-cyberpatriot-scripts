@@ -1,5 +1,5 @@
 # bt-cyberpatriot-scripts
-Developed scripts designed to automate annoying parts of the CyberPatriot Competition
+Developed scripts and put in checklist(s) designed to automate annoying parts of the CyberPatriot Competition
 
 
 #### LINUX: 
