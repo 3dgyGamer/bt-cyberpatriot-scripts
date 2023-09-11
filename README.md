@@ -10,7 +10,7 @@ git stash
 git pull origin main
 git checkout -b my-branch-name
 ```
-EDIT CODE
+```EDIT CODE```
 
 ```
 git stash pop
