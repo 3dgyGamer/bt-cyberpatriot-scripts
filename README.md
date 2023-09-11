@@ -17,6 +17,16 @@ git stash pop
 git commit -m "My commit message"
 git push origin my-branch-name
 
+### Resources:
+Follow this linux checklist during dev
+
+https://gist.github.com/bobpaw/a0b6828a5cfa31cfe9007b711a36082f
+
+Follow this windows checklist during dev
+
+https://www.cochise.edu/wp-content/uploads/2021/02/Security-Checklist-Windows.pdf
+
+Please research more checklists so we can get the most points. 
 
 #### WARNING: 
 !!! DO NOT RUN THESE FILE(S) BEFORE READING THE README FILE AS WELL AS READING THE FORENSIC QUESTIONS IN THE VIRTUAL MACHINE
