@@ -4,18 +4,19 @@ Took scripts designed to automate annoying parts of the CyberPatriot Competition
 
 ## TO CONTRIBUTE:
 To edit changes, please follow these steps:
-
+```
 git add .
 git stash
 git pull origin main
 git checkout -b my-branch-name
-
+```
 EDIT CODE
 
-
+```
 git stash pop
 git commit -m "My commit message"
 git push origin my-branch-name
+```
 
 ### Resources:
 Follow this linux checklist during dev
