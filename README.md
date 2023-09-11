@@ -3,6 +3,9 @@ Took scripts designed to automate annoying parts of the CyberPatriot Competition
 
 
 ## TO CONTRIBUTE:
+
+If you are making a command, please wrap the code for the command within a function to be called
+
 To edit changes, please follow these steps:
 ```
 git add .
