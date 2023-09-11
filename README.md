@@ -2,17 +2,20 @@
 Took scripts designed to automate annoying parts of the CyberPatriot Competition (Will add more of my own stuff latr)
 
 
-#### LINUX: 
+## TO CONTRIBUTE:
+To edit changes, please follow these steps:
 
-To run the linux shell script, please download a copy of the file, and run the following commands: 
+git add .
+git stash
+git pull origin main
+git checkout -b my-branch-name
 
-```chmod +x linux.sh```
+EDIT CODE
 
-To execute the file:
 
-```./linux.sh```
-
-#### WINDOWS: 
+git stash pop
+git commit -m "My commit message"
+git push origin my-branch-name
 
 
 #### WARNING: 
