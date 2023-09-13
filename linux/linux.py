@@ -1,7 +1,7 @@
 import os
+import subprocess
 
-
-edia_files_raw= [
+media_files_raw= [
     # Audio formats
     'aa',
     'aac',
@@ -110,26 +110,73 @@ edia_files_raw= [
 
 ### setup 
 def checkIfRoot():
-    pass
+    if os.geteuid() != 0:
+        return False
 
 ### installations
 def installUFW():
-    pass
+    #do a subprocess call to install UFW
+    proc = subprocess.Popen('apt-get install -y gufw', shell=True, stdin=None, stdout=open("/dev/null", "w"), stderr=None, executable="/bin/bash")
+    proc.wait()
 
 def installClamAV():
+    proc = subprocess.Popen('apt-get install -y clamav', shell=True, stdin=None, stdout=open("/dev/null", "w"), stderr=None, executable="/bin/bash")
+    proc.wait()
     pass
 
 def installPam():
-    pass
+    proc = subprocess.Popen('apt-get install -y libpam-cracklib', shell=True, stdin=None, stdout=open("/dev/null", "w"), stderr=None, executable="/bin/bash")
+    proc.wait()
 
 def installSSH():
     pass
+
+
+
 ### cleaning
+def update():
+    pass
+def findAndRemoveMediaFiles():
+    EXCLUDE_DIRECTORY = (   
+                            #Windows system directory
+                            'Program Files',
+                            'Program Files (x86)',
+                            'Windows',
+                            'AppData',
+                            'logs',
+
+    )
+    for root, dirs, files in os.walk("/"):
+            if any(s in root for s in EXCLUDE_DIRECTORY):
+                pass
+            else:
+                for file in files:
+                    if file.endswith(EXTENSIONS):
+                        TARGET = os.path.join(root, file)
+                        try:
+                            print("Found media file: " + TARGET)
+                            choice = input("Delete file? y/n")
+                            if choice == 'y':
+                                pass
+                            elif choice == 'n':
+                                pass
+                            else:
+                                pass
+
+                        except Exception:
+                            continue
+def runClamAV():
+    pass
 
 
 ### policy changes
 def updatePasswordPolicy():
     pass
+
+def findGroups():
+    pass
+
+
 
 #main menu
 def menu():
@@ -147,5 +194,5 @@ if __name__ == "__main__":
     if checkIfRoot():
         menu()
     else:
-        print('Please run this file as root!. Terminating...')
-        exit
+        print('Please run this file as root!!! USE SUDO! Terminating...')
+        exit()
