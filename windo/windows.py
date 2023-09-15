@@ -7,10 +7,36 @@ def checkIfRoot():
     pass
 
 
-####cleaning up
-
+####cleaning up and securing
+def findAndRemoveMediaFiles():
+    pass
+def turnonFirewall():
+    pass
+def searchForProhibitedPrograms():
+    pass
 
 ####security policies 
+def updateWindows():
+    pass
+
+def updatePasswordPolicy():
+    pass
+def changeUpdatePolicy():
+    pass
+def findGroupsToChange():
+    pass
+def changeOrRemoveGroup():
+    pass
+def removeUnauthorizedUsers():
+    pass
+def addUser():
+    pass
+def addNewGroup():
+    pass
+def checkFilesWithHighPermissions():
+    pass
+
+
 
 def menu():
     pass
